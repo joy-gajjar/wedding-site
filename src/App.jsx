@@ -765,6 +765,13 @@ const StorySwiper = ({ chapters }) => {
       onKeyDown={onKeyDown}
       className="focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C5A15B] rounded-xl"
     >
+      <div className="mb-4 flex items-center justify-center gap-3 font-cinzel text-[11px] tracking-[0.25em] text-[#641D2B] uppercase select-none">
+        <span aria-live="polite">
+          {String(index + 1).padStart(2, '0')} / {String(total).padStart(2, '0')}
+        </span>
+        <span className="swipe-hint-hand inline-block" aria-hidden="true">⟷</span>
+        <span className="text-[#29201D]/60">Swipe to turn the page</span>
+      </div>
       <div
         ref={viewportRef}
         onPointerDown={onPointerDown}
@@ -788,17 +795,22 @@ const StorySwiper = ({ chapters }) => {
               aria-roledescription="slide"
               aria-label={`Chapter ${i + 1} of ${total}`}
               aria-hidden={i !== index}
-              className={`story-slide w-full shrink-0 p-6 sm:p-12 ${i === index ? 'is-active' : ''}`}
+              className={`story-slide w-full shrink-0 p-5 sm:p-12 ${i === index ? 'is-active' : ''}`}
             >
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center">
                 <div className="chapter-frame lg:col-span-5">
-                  <JharokhaFrame imageUrl={ch.imageUrl} title={ch.imageCaption} monogram={ch.number} />
+                  <JharokhaFrame
+                    imageUrl={ch.imageUrl}
+                    title={ch.imageCaption}
+                    monogram={ch.number}
+                    sizeClass="max-w-[230px] sm:max-w-sm"
+                  />
                 </div>
                 <div className="lg:col-span-7">
                   <span className="chapter-item block font-cinzel text-xs tracking-[0.25em] text-[#C5A15B] uppercase" style={{ '--i': 0 }}>
                     {ch.number} • {ch.dateLabel}
                   </span>
-                  <h3 className="chapter-item mt-2 font-cinzel text-2xl sm:text-4xl text-[#F4EBDD] uppercase" style={{ '--i': 1 }}>
+                  <h3 className="chapter-item mt-2 font-cinzel text-[1.6rem] leading-tight sm:text-4xl text-[#F4EBDD] uppercase" style={{ '--i': 1 }}>
                     {ch.title}
                   </h3>
                   <p className="chapter-item font-cormorant italic text-xl text-[#C5A15B] mt-1" style={{ '--i': 2 }}>
@@ -807,7 +819,7 @@ const StorySwiper = ({ chapters }) => {
                   <blockquote className="chapter-item my-5 pl-4 border-l-2 border-[#C5A15B] font-cormorant italic text-xl text-[#E5D5BB]" style={{ '--i': 3 }}>
                     {ch.quote}
                   </blockquote>
-                  <div className="space-y-4 font-cormorant text-xl leading-relaxed text-[#F4EBDD]/95">
+                  <div className="space-y-4 font-cormorant text-lg sm:text-xl leading-relaxed text-[#F4EBDD]/95">
                     <p className="chapter-item" style={{ '--i': 4 }}>{ch.boyNarrative}</p>
                     <p className="chapter-item" style={{ '--i': 5 }}>{ch.girlNarrative}</p>
                     <p className="chapter-item text-[#C5A15B] font-semibold italic" style={{ '--i': 6 }}>
@@ -821,13 +833,6 @@ const StorySwiper = ({ chapters }) => {
         </div>
       </div>
 
-      <div className="mt-5 flex items-center justify-center gap-3 font-cinzel text-[11px] tracking-[0.25em] text-[#641D2B] uppercase select-none">
-        <span aria-live="polite">
-          {String(index + 1).padStart(2, '0')} / {String(total).padStart(2, '0')}
-        </span>
-        <span className="swipe-hint-hand inline-block" aria-hidden="true">⟷</span>
-        <span className="text-[#29201D]/60">Swipe to turn the page</span>
-      </div>
     </div>
   );
 };
@@ -880,10 +885,17 @@ const OrnamentalDivider = ({ variant = 'gold', showLotus = true }) => {
   );
 };
 
-const JharokhaFrame = ({ imageUrl, title, monogram = 'J&S', dark = false, aspectClass = 'aspect-[4/5]' }) => {
+const JharokhaFrame = ({
+  imageUrl,
+  title,
+  monogram = 'J&S',
+  dark = false,
+  aspectClass = 'aspect-[4/5]',
+  sizeClass = 'max-w-sm'
+}) => {
   return (
     <div
-      className={`relative mx-auto w-full max-w-sm rounded-t-full p-3 border-2 border-[#C5A15B]/70 shadow-2xl overflow-hidden ${
+      className={`relative mx-auto w-full ${sizeClass} rounded-t-full p-3 border-2 border-[#C5A15B]/70 shadow-2xl overflow-hidden ${
         dark ? 'bg-[#46131F]' : 'bg-[#F4EBDD]'
       }`}
     >
@@ -910,7 +922,7 @@ const JharokhaFrame = ({ imageUrl, title, monogram = 'J&S', dark = false, aspect
               }}
             />
             <LotusMandalaSVG className="w-28 h-28 mb-3 opacity-80" color="#C5A15B" />
-            <span className="font-cinzel text-2xl tracking-[0.25em] text-[#C5A15B] font-semibold">
+            <span className="font-cinzel text-lg sm:text-2xl tracking-[0.15em] sm:tracking-[0.25em] whitespace-nowrap text-[#C5A15B] font-semibold">
               {monogram}
             </span>
             <p className="font-cormorant italic text-[#F4EBDD]/90 text-base mt-2 max-w-[220px]">
@@ -2189,15 +2201,15 @@ export default function App() {
             <OrnamentalDivider variant="burgundy" />
 
             {/* Side Filter Buttons */}
-            <div className="inline-flex flex-wrap justify-center gap-2 mt-2">
+            <div className="grid grid-cols-2 gap-2 mt-2 w-full max-w-md mx-auto">
               {[
-                { id: 'groom', label: 'Shah Family (Groom)' },
-                { id: 'bride', label: 'Dasadia Family (Bride)' }
+                { id: 'groom', label: 'Shah Family' },
+                { id: 'bride', label: 'Dasadia Family' }
               ].map((tab) => (
                 <button
                   key={tab.id}
                   onClick={() => setFamilyFilter(tab.id)}
-                  className={`px-5 py-2 rounded-sm font-cinzel text-xs tracking-wider uppercase border transition-colors cursor-pointer ${
+                  className={`px-3 py-2.5 rounded-sm font-cinzel text-xs tracking-wider uppercase border transition-colors cursor-pointer ${
                     familyFilter === tab.id
                       ? 'bg-[#641D2B] text-[#F4EBDD] border-[#641D2B]'
                       : 'bg-[#E5D5BB]/70 text-[#29201D] border-[#C5A15B] hover:border-[#641D2B]'
@@ -2951,7 +2963,7 @@ export default function App() {
                     value={wishName}
                     onChange={(e) => setWishName(e.target.value)}
                     placeholder="e.g., राजेश भाई शाह / Priya & Family"
-                    className="w-full px-4 py-3 rounded bg-[#641D2B]/60 border border-[#C5A15B]/60 text-[#F4EBDD] placeholder-[#E5D5BB]/40 text-sm focus:outline-none focus:border-[#C5A15B]"
+                    className="w-full px-4 py-3 rounded bg-[#641D2B]/60 border border-[#C5A15B]/60 text-[#F4EBDD] placeholder-[#E5D5BB]/40 text-base sm:text-sm focus:outline-none focus:border-[#C5A15B]"
                   />
                 </div>
 
@@ -2965,7 +2977,7 @@ export default function App() {
                     value={wishRelation}
                     onChange={(e) => setWishRelation(e.target.value)}
                     placeholder="e.g., Maternal Uncle, College Friend, Colleague"
-                    className="w-full px-4 py-3 rounded bg-[#641D2B]/60 border border-[#C5A15B]/60 text-[#F4EBDD] placeholder-[#E5D5BB]/40 text-sm focus:outline-none focus:border-[#C5A15B]"
+                    className="w-full px-4 py-3 rounded bg-[#641D2B]/60 border border-[#C5A15B]/60 text-[#F4EBDD] placeholder-[#E5D5BB]/40 text-base sm:text-sm focus:outline-none focus:border-[#C5A15B]"
                   />
                 </div>
 
@@ -2980,7 +2992,7 @@ export default function App() {
                     value={wishMessage}
                     onChange={(e) => setWishMessage(e.target.value)}
                     placeholder="Write your heartfelt message for Jainam & Shalvi..."
-                    className="w-full px-4 py-3 rounded bg-[#641D2B]/60 border border-[#C5A15B]/60 text-[#F4EBDD] placeholder-[#E5D5BB]/40 text-sm focus:outline-none focus:border-[#C5A15B]"
+                    className="w-full px-4 py-3 rounded bg-[#641D2B]/60 border border-[#C5A15B]/60 text-[#F4EBDD] placeholder-[#E5D5BB]/40 text-base sm:text-sm focus:outline-none focus:border-[#C5A15B]"
                   />
                 </div>
 
@@ -3012,7 +3024,7 @@ export default function App() {
             </div>
 
             {/* Right Column: Approved & Featured Royal Message Cards */}
-            <div className="lg:col-span-7 space-y-4 max-h-[620px] overflow-y-auto pr-1">
+            <div className="lg:col-span-7 space-y-4 lg:max-h-[620px] lg:overflow-y-auto pr-1">
               {approvedWishes.map((wish) => (
                 <div
                   key={wish.id}
@@ -3118,7 +3130,8 @@ export default function App() {
       {/* ====================================================================
           FLOATING ROYAL BACKGROUND MUSIC PLAYER
       ==================================================================== */}
-      <div className="fixed bottom-5 left-5 z-40 flex items-center gap-2 bg-[#46131F]/95 border-2 border-[#C5A15B] text-[#F4EBDD] px-3.5 py-2.5 rounded-full shadow-2xl backdrop-blur-md">
+      <div style={{ bottom: 'max(1rem, env(safe-area-inset-bottom))' }}
+        className="fixed left-4 sm:left-5 z-40 flex items-center gap-2 bg-[#46131F]/95 border-2 border-[#C5A15B] text-[#F4EBDD] p-1 sm:px-3.5 sm:py-2.5 rounded-full shadow-2xl backdrop-blur-md">
         <button
           onClick={() => toggleMusicPlayback()}
           aria-label={isPlayingMusic ? 'Pause Royal Music' : 'Play Royal Music'}
@@ -3139,7 +3152,7 @@ export default function App() {
         <button
           onClick={handleMuteToggle}
           aria-label={isMutedMusic ? 'Unmute Music' : 'Mute Music'}
-          className="p-1.5 text-[#C5A15B] hover:text-[#F4EBDD] cursor-pointer"
+          className="hidden sm:block p-1.5 text-[#C5A15B] hover:text-[#F4EBDD] cursor-pointer"
         >
           {isMutedMusic ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
         </button>
