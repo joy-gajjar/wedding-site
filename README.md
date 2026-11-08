@@ -1,5 +1,21 @@
 # React + Vite
 
+## Wedding entrance
+
+- Photos live in `public/couple/`; the final invitation uses `jainam-shalvi-3.jpg` in `ScrollEntrance` (`src/App.jsx`). The copies are upright, resized and stripped of EXIF metadata.
+- Palace art is `public/entrance/palace.svg`. Its opening (480,240–720,630 in the 1200×700 viewBox) must match `DOORWAY` and the door paths in `PalaceGate` in `src/App.jsx`.
+- Scroll thresholds live in `src/entranceTimeline.js`. The dance is `public/media/our-dance.mp4` (cropped from the original film to remove the corner watermark, muted, ~1.3 MB) with `our-dance-poster.jpg`; swap these files to change it. Reduced motion skips the film and shows a static invitation.
+- Story chapters, couple profiles and family details are plain data in `INITIAL_CMS_DATA` at the top of `src/App.jsx`.
+
+Run `npm run check` for the timeline tests, `npm run lint` for lint, and `npm run build` for a production build.
+The optional `scripts/entrance.browser-check.mjs` validates the mobile flow in Chrome. With Playwright installed in your tooling environment, run the site on port 5199, then run:
+
+```sh
+PLAYWRIGHT_MODULE=/absolute/path/to/playwright-core/index.mjs node scripts/entrance.browser-check.mjs
+```
+
+Use `TEST_URL` for a different local URL and `SHOT_DIR` to save review screenshots. The script covers normal scrolling, pause/resume, skip, natural completion, replay, keyboard focus, deep links, music, four viewport sizes, and live reduced-motion changes.
+
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
 Currently, two official plugins are available:

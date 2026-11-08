@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" fill="none">
+  <defs>
+    <linearGradient id="stone" x2="0" y2="1"><stop stop-color="#F4EBDD"/><stop offset="1" stop-color="#B79461"/></linearGradient>
+    <linearGradient id="wall" x2="0" y2="1"><stop stop-color="#7D3540"/><stop offset="1" stop-color="#38111D"/></linearGradient>
+    <pattern id="jaali" width="16" height="22" patternUnits="userSpaceOnUse"><path d="M8 0L16 11 8 22 0 11Z" stroke="#C5A15B" stroke-width=".7"/><circle cx="8" cy="11" r="1.5" fill="#C5A15B"/></pattern>
+    <pattern id="buti" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M18 10Q25 18 18 26Q11 18 18 10Z" fill="#C5A15B" opacity=".25"/></pattern>
+    <g id="window">
+      <path d="M0 132V48Q0 17 45 0Q90 17 90 48V132Z" fill="#30101A" stroke="#E8CF8E" stroke-width="4"/>
+      <path d="M8 125V48Q8 23 45 10Q82 23 82 48V125Z" fill="url(#jaali)" stroke="#C5A15B"/>
+      <path d="M-8 132H98V144H-8Z M-14 148H104V154H-14Z" fill="url(#stone)" stroke="#8A6A2E"/>
+      <path d="M-5 145L9 170H81L95 145M16 153V168M32 153V168M48 153V168M64 153V168" stroke="#C5A15B" stroke-width="3"/>
+    </g>
+    <g id="chhatri">
+      <path d="M-62 0Q-60-33-25-44Q-5-48 0-64Q5-48 25-44Q60-33 62 0Z" fill="url(#stone)" stroke="#C5A15B" stroke-width="2"/>
+      <path d="M-39-6Q-39-30-12-47M-18-5Q-20-30 0-60M18-5Q20-30 0-60M39-6Q39-30 12-47" stroke="#AD874F"/>
+      <path d="M-70 0H70V8H-70Z" fill="#E8CF8E" stroke="#8A6A2E"/>
+      <path d="M-52 10V70M-26 10V70M26 10V70M52 10V70" stroke="#E5D5BB" stroke-width="6"/>
+      <path d="M-51 34Q-40 10-26 34M-25 34Q0 0 25 34M26 34Q40 10 51 34" stroke="#C5A15B" stroke-width="2"/>
+      <path d="M-66 70H66V80H-66Z" fill="url(#stone)" stroke="#C5A15B"/>
+      <path d="M0-64V-89M-6-72H6" stroke="#C5A15B" stroke-width="3"/><circle cy="-82" r="4" fill="#E8CF8E"/>
+    </g>
+    <g id="wing">
+      <path d="M45 335H420V632H45Z" fill="url(#wall)" stroke="#C5A15B" stroke-width="3"/>
+      <path d="M57 350H405V614H57Z" fill="url(#buti)" stroke="#C5A15B"/>
+      <path d="M30 328H432V343H30Z M40 622H430V637H40Z" fill="url(#stone)" stroke="#8A6A2E"/>
+      <use href="#window" x="102" y="396"/><use href="#window" x="277" y="396"/>
+      <path d="M62 310V328M90 310V328M118 310V328M146 310V328M174 310V328M202 310V328M230 310V328M258 310V328M286 310V328M314 310V328M342 310V328M370 310V328M398 310V328" stroke="#E8CF8E" stroke-width="9"/>
+      <path d="M67 354V610M217 354V610M242 354V610M394 354V610" stroke="#C5A15B" stroke-width="3"/>
+      <path d="M160 273H297V332H160Z" fill="url(#wall)" stroke="#C5A15B"/>
+      <use href="#chhatri" transform="translate(228 201)"/>
+      <path d="M11 420H57V632H11Z" fill="url(#stone)" stroke="#C5A15B"/>
+      <use href="#chhatri" transform="translate(33 370) scale(.55)"/>
+    </g>
+  </defs>
+  <!-- Symmetric miniature facade; central opening is x480..720, y240..630. -->
+  <ellipse cx="600" cy="672" rx="560" ry="23" fill="#1B0710" opacity=".6"/>
+  <use href="#wing"/><use href="#wing" transform="translate(1200 0) scale(-1 1)"/>
+  <path d="M413 191H787V635H413Z" fill="url(#stone)" stroke="#C5A15B" stroke-width="3"/>
+  <path d="M428 204H772V622H428Z" fill="url(#wall)" stroke="#C5A15B" stroke-width="2"/>
+  <path d="M432 211H768V620H432Z" fill="url(#buti)"/>
+  <path d="M455 632V366Q455 271 600 210Q745 271 745 366V632Z" fill="url(#stone)" stroke="#C5A15B" stroke-width="3"/>
+  <path d="M467 632V370Q467 284 600 225Q733 284 733 370V632Z" fill="#641D2B" stroke="#8A6A2E" stroke-width="2"/>
+  <path d="M480 630V370Q480 295 600 240Q720 295 720 370V630Z" fill="#1B0710" stroke="#E8CF8E" stroke-width="3"/>
+  <path d="M441 367V614M758 367V614" stroke="#E8CF8E" stroke-width="5"/>
+  <path d="M401 181H799V199H401Z M395 167H805V180H395Z" fill="url(#stone)" stroke="#8A6A2E" stroke-width="2"/>
+  <path d="M423 144V167M451 144V167M749 144V167M777 144V167" stroke="#E8CF8E" stroke-width="12"/>
+  <use href="#chhatri" transform="translate(600 82) scale(1.1)"/>
+  <use href="#chhatri" transform="translate(449 121) scale(.5)"/>
+  <use href="#chhatri" transform="translate(751 121) scale(.5)"/>
+  <path d="M384 635H816V647H384Z M368 647H832V659H368Z M350 659H850V671H350Z" fill="url(#stone)" stroke="#8A6A2E"/>
+  <path d="M491 644H709M479 656H721M465 668H735" stroke="#641D2B" stroke-width="3"/>
+  <g fill="#E8CF8E" stroke="#8A6A2E">
+    <circle cx="445" cy="231" r="7"/><circle cx="755" cy="231" r="7"/>
+    <path d="M445 248L451 261 445 274 439 261Z M755 248L761 261 755 274 749 261Z"/>
+  </g>
+</svg>
