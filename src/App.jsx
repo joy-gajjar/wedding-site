@@ -11,12 +11,12 @@ import {
   VolumeX,
   Share2,
   Download,
-  Eye,
+  // Eye,
   X,
-  ChevronLeft,
+  // ChevronLeft,
   ChevronRight,
   Menu,
-  Film,
+  // Film,
   BookOpen,
   Users,
   Send,
@@ -36,7 +36,7 @@ const INITIAL_CMS_DATA = {
   settings: {
     groomName: 'Jainam Shah',
     brideName: 'Shalvi Dasadia',
-    tagline: 'A Royal Beginning to Forever',
+    // tagline: 'A Beginning to Forever',
     weddingDateISO: '2027-02-27T12:39:00+05:30',
     weddingDateDisplay: '27 February 2027',
     hashtag: '#JainamKiShalvi',
@@ -44,7 +44,7 @@ const INITIAL_CMS_DATA = {
     metaDescription:
       'Celebrate the beautiful journey of Jainam Shah and Shalvi Dasadia as they begin their forever together on 27 February 2027.',
     autoApproveWishes: true, // No admin moderation any more, so wishes appear immediately
-    musicUrl: '', // Empty uses built-in Royal Tanpura & Chime Synthesizer; set a custom MP3 URL here
+    musicUrl: './media/pehla-nasha-piano.mp3', // Empty uses built-in Royal Tanpura & Chime Synthesizer; set a custom MP3 URL here
     invitationPdfUrl: '',
     invitationDownloadEnabled: true,
     invitationNote:
@@ -54,87 +54,74 @@ const INITIAL_CMS_DATA = {
     {
       id: 'ch-1',
       number: 'CHAPTER 01',
-      title: 'Stolen Glances & An Anime DP',
-      subtitle: 'Where it all began',
+      title: 'The Eyes That Found Each Other',
+      subtitle: 'A beginning written by destiny',
       dateLabel: 'Sthanakvasi Jain Upashray',
-      quote: '“We caught each other’s eyes across the hall again and again—yet neither of us said a word.”',
+      quote: '“Call it fate or love at first sight.”',
       story: [
-        'Our story began in the serene surroundings of the Sthanakvasi Jain Upashray. Call it fate or love at first sight, we caught each other’s eyes across the hall again and again—yet neither of us said a word.',
-        'Determined to find her, Jainam tracked down Shalvi’s Instagram and sent a follow request, only to be left hanging because his profile picture was an anime character and she had no idea who he was!',
-        'Six months later, destiny gave us a second take at the very same Upashray. After another round of stolen glances, it was Shalvi’s turn to do some detective work. She found his profile, sent the first text, and officially began our story.'
-      ],
-      imageCaption: 'Sthanakvasi Jain Upashray',
-      imageUrl: ''
+        'Our story began at the Sthanakvasi Jain Upashray, where we caught each other’s eyes across the hall again and again, yet neither said a word. Determined to find her, Jainam tracked down Shalvi’s Instagram and sent a follow request.',
+        'It was left hanging, because his profile picture was an anime character and she had no idea who he was. Six months later, destiny gave us a second take at the very same Upashray. After another round of stolen glances, Shalvi did some detective work: she found his profile, sent the first text, and officially began our story.'
+      ]
     },
     {
       id: 'ch-2',
       number: 'CHAPTER 02',
-      title: 'The Riverfront Surprise',
-      subtitle: 'Our first real date',
-      dateLabel: 'The Riverfront',
+      title: 'An Evening by the River',
+      subtitle: 'The surprise that became a memory',
+      dateLabel: 'One Evening · Ahmedabad Riverfront',
       quote: '“Our first real date wasn’t a grand planned affair, which made it even better.”',
       story: [
         'One evening, Jainam showed up at Shalvi’s office as a surprise. From there, we rode over to the Riverfront and spent an hour simply sitting by the water, talking about our lives before he dropped her home.',
-        'By the end of that evening, Jainam was convinced he had met the ultimate sanskari, sushil girl of his dreams, while Shalvi walked away smiling at the caring, effortlessly funny guy who had just brightened her evening.'
-      ],
-      imageCaption: 'An evening by the Riverfront',
-      imageUrl: ''
+        'By the end of that evening, Jainam was already convinced that he had met someone truly special, a girl whose simplicity, values, and warmth made her stand out. Shalvi, meanwhile, went home with a smile, charmed by his caring nature, effortless humour, and the way he had made an ordinary evening feel so memorable.'
+      ]
     },
     {
       id: 'ch-3',
       number: 'CHAPTER 03',
-      title: 'Instagram Chats & Commute Chronicles',
-      subtitle: 'Magic in the everyday',
-      dateLabel: 'Late nights & daily rides',
-      quote: '“We didn’t need extravagant getaways to fall deeper in love—our magic happened in the everyday routine.”',
+      title: 'Between Chats & Commutes',
+      subtitle: 'Finding magic in the everyday',
+      dateLabel: 'Between Home & Office',
+      quote: '“We didn’t need extravagant getaways to fall deeper in love, our magic happened in the everyday routine.”',
       story: [
-        'Between endless late-night Instagram conversations and the happy coincidence that our daily office routes nearly overlapped, our commutes quickly became the best part of the workday.',
-        'Those shared rides through city traffic turned two people getting to know each other into best friends who couldn’t imagine a day without talking.'
-      ],
-      imageCaption: 'Shared rides through the city',
-      imageUrl: ''
+        'Between endless late-night Instagram conversations and our growing excitement to see each other every day, we slowly found our own little routine. The daily office rides became something we both looked forward to, turning ordinary journeys through the city into moments filled with laughter, conversations, and countless little memories.',
+        'What started as two people getting to know each other soon blossomed into a beautiful friendship. Before we knew it, talking to each other had become the favourite part of our day, and neither of us could imagine going a day without it.'
+      ]
     },
     {
       id: 'ch-4',
       number: 'CHAPTER 04',
-      title: 'Becoming Each Other’s Habit',
-      subtitle: 'Quietly, then all at once',
-      dateLabel: 'Every season since',
-      quote: '“There wasn’t a single cinematic lightning bolt—instead, we quietly became each other’s favourite habit.”',
+      title: 'Somewhere Along the Way, It Became Us',
+      subtitle: 'When two hearts found their home',
+      dateLabel: 'The Little Moments That Became Everything',
+      quote: '“There wasn’t a single cinematic lightning bolt, instead, we quietly became each other’s favourite habit.”',
       story: [
-        'Over time, Jainam saw in Shalvi everything he had ever prayed for—a creative soul who would love and care for his parents as her own and show compassion to everyone around her.',
-        'And in Jainam, Shalvi found her safe harbour—a man who would put her first, protect her, and keep her laughing through every season of life.'
-      ],
-      imageCaption: 'Each other’s favourite habit',
-      imageUrl: ''
+        'As time passed, Jainam began to see in Shalvi the kind of person he had always hoped to find. Her creativity, kind heart, and genuine care for others made her even more special to him. He could picture her becoming an inseparable part of his family, someone who would love and cherish his parents just as much as he did.',
+        'For Shalvi, Jainam became someone she could always count on, a partner who made her feel loved, valued, and secure. His caring nature, constant support, and effortless ability to make her laugh made her realise that she had found someone with whom she could share every little joy and every challenge life brought their way.'
+      ]
     },
     {
       id: 'ch-5',
       number: 'CHAPTER 05',
-      title: 'The Soft Launch & Family Blessings',
-      subtitle: 'An effortless “Yes!” from everyone',
-      dateLabel: 'Bandish Bhai’s wedding',
+      title: 'A Love Welcomed by All',
+      subtitle: 'Two families, one beautiful blessing',
+      dateLabel: 'Bandish Bhai’s Wedding',
       quote: '“Our quiet romance turned into a joyous, effortless “Yes!” from everyone.”',
       story: [
-        'The unofficial debut happened during Bandish Bhai’s wedding. Knowing how talented Shalvi is with traditional decor and chaab designs, Jainam smartly “soft-launched” her to the Shah family through the wedding preparations.',
-        'Once the festivities wrapped up, we finally opened up to our parents. Coming from the same Sthanakvasi Jain roots and values, both families welcomed the match with open hearts, turning our quiet romance into a joyous, effortless “Yes!” from everyone.'
-      ],
-      imageCaption: 'Two families, one blessing',
-      imageUrl: ''
+        'Our first little introduction to the Shah family happened during Bandish Bhai’s wedding. Knowing Shalvi’s talent for traditional décor and chaab designs, Jainam found the perfect opportunity to bring her into the family celebrations. What began as a little help with the wedding preparations became her unofficial introduction to everyone.',
+        'After the celebrations, we finally gathered the courage to share our feelings with our parents. With both families sharing the same Sthanakvasi Jain roots, traditions, and values, everything fell beautifully into place. Our parents welcomed the relationship wholeheartedly, turning a story that had begun with a few stolen glances into a bond celebrated by two families.'
+      ]
     },
     {
       id: 'ch-6',
       number: 'CHAPTER 06',
-      title: 'Forever Starts February 27, 2027',
-      subtitle: 'Hand in hand',
-      dateLabel: '27 February 2027',
+      title: 'The Beginning of Forever',
+      subtitle: '27 February 2027 and all the days after',
+      dateLabel: '27 February 2027 · Our Wedding Day',
       quote: '“Hand in hand, just like those evening rides that started it all.”',
       story: [
-        'As we count down to February 27, 2027, we couldn’t be more excited to step into this next chapter side by side.',
-        'We are ready to build a life filled with shared ambitions, mutual success, spontaneous adventures, and endless laughter—hand in hand, just like those evening rides that started it all.'
-      ],
-      imageCaption: 'Our forever begins',
-      imageUrl: ''
+        'As February 27, 2027 draws closer, we find ourselves looking forward to the most beautiful chapter of our story yet, beginning a lifetime together.',
+        'With hearts full of dreams and excitement, we look forward to building a life filled with shared ambitions, little adventures, countless laughs, unwavering support, and memories yet to be made. And no matter where life takes us, we’ll keep choosing each other, hand in hand, just as we did on those first evening rides that brought us closer.'
+      ]
     }
   ],
   couple: {
@@ -143,14 +130,10 @@ const INITIAL_CMS_DATA = {
       title: 'The Groom',
       writtenBy: 'In Shalvi’s words',
       monogram: 'J',
-      portraitUrl: './couple/jainam-illustrated.jpg',
+      portraitUrl: './couple/jainam-portrait.jpg',
       introduction:
-        'If there is ever a problem that needs solving, Jainam already has three logical solutions mapped out in his head. When he isn’t engineering solutions at work, you’ll find him calculating his next move on a chess board, immersed in video games, or diving deep into a new skill just for the joy of learning. Yes, he can have a quick temper at times, but beneath that logical exterior is the funniest, most fiercely caring and loving man.',
-      facts: [
-        { label: 'Education', text: 'Master’s in Mechanical Engineering' },
-        { label: 'Work', text: 'Former researcher at ISRO; now at Harsha Engineers International Limited' },
-        { label: 'Loves', text: 'Chess, video games and learning new skills for the joy of it' }
-      ],
+        'Whenever something needs solving, Jainam already has three logical solutions mapped out in his head, and I love that about him. A chess board, a video game or a new skill to learn is all it takes to make him happy. He can have a quick temper, yes, but beneath all that logic is the funniest, most fiercely caring and loving man I know. I can’t wait to build our forever with him.',
+      facts: [],
       personalMessage: '“He makes me feel cherished every single day.” — Shalvi'
     },
     bride: {
@@ -158,26 +141,22 @@ const INITIAL_CMS_DATA = {
       title: 'The Bride',
       writtenBy: 'In Jainam’s words',
       monogram: 'S',
-      portraitUrl: './couple/shalvi-illustrated.jpg',
+      portraitUrl: './couple/shalvi-portrait.jpg',
       introduction:
-        'The first thing you’ll notice about Shalvi is how effortlessly she puts everyone else before herself. At heart, she is the most caring, loving, and compassionate person I have ever met. She has this incredible creative spark that turns everything around her into something beautiful—whether she is pouring intricate resin art, perfecting nail art, designing traditional wedding chaabs, or cooking up something amazing in the kitchen.',
-      facts: [
-        { label: 'Education', text: 'Master’s in Commerce' },
-        { label: 'Work', text: 'HR Executive at Allies Business Hub, 4.5+ years' },
-        { label: 'Loves', text: 'Resin art, nail art, wedding chaab designs and cooking' }
-      ],
+        'Shalvi effortlessly puts everyone else before herself, and she is the most caring, loving and compassionate person I have ever met. Her creative spark turns everything around her into something beautiful, from intricate resin art and nail art to traditional wedding chaabs and the meals she cooks in her kitchen.',
+      facts: [],
       personalMessage:
-        '“She is the calm to my storm, the warmth in every room, and the exact partner I always hoped to find.” — Jainam'
+        '“She’s my calm, my warmth, my forever.” — Jainam'
     }
   },
   familyIntros: {
     groom: {
       title: 'The Groom’s Family — The Shahs',
-      text: 'Step into the Shah household and you’ll immediately feel the warmth, laughter, and togetherness that define us. Our home thrives on shared moments—especially our legendary family card nights that happen at least four times a week!'
+      text: 'Step into the Shah home and you’ll feel the warmth, laughter and togetherness that define us. Our days are built around shared moments, and our legendary card nights, which happen at least four times a week, are where the whole family gathers. We can’t wait to celebrate with you.'
     },
     bride: {
       title: 'The Bride’s Family — The Dasadias',
-      text: 'At the heart of the Dasadia home is a deep bond built on hard work, humility, and unconditional love. Shalvi grew up in a closely knit home where family always comes first. Their grace, togetherness, and heartfelt warmth are the very values Shalvi carries with her every day.'
+      text: 'Step into the Dasadia home and you’ll find a deep bond built on hard work, humility and unconditional love. Family always comes first here. The grace, togetherness and heartfelt warmth of this home are the values Shalvi grew up with and carries with her every day. We are so glad you’ll be part of our celebration.'
     }
   },
   families: [
@@ -187,8 +166,8 @@ const INITIAL_CMS_DATA = {
       category: 'Parents',
       name: 'Manvesh Shah & Bhavina Shah',
       relation: 'Papa & Mom',
-      introduction: 'The unwavering love and guidance at the heart of the Shah household.',
-      photoUrl: ''
+      introduction: 'Our guiding lights, whose unwavering love and guidance hold our family together, and who welcomed our story with open hearts.',
+      photoUrl: './family/shah-parents.jpg'
     },
     {
       id: 'fam-2',
@@ -196,8 +175,8 @@ const INITIAL_CMS_DATA = {
       category: 'Brother & Sister-in-law',
       name: 'Bandish Bhai & Kamya Bhabhi',
       relation: 'Elder brother & sister-in-law',
-      introduction: 'Our constant camaraderie—and the reason for the famous soft launch.',
-      photoUrl: ''
+      introduction: 'Our constant camaraderie, and the very reason our famous soft launch happened.',
+      photoUrl: './family/bandish-kamya.jpg'
     },
     {
       id: 'fam-3',
@@ -206,8 +185,8 @@ const INITIAL_CMS_DATA = {
       name: 'Baby Hreyan',
       relation: 'The newest star of the family',
       introduction:
-        'Two months old and already practising his best smiles to welcome his favourite Chachi home at Chachu and Chachi’s wedding.',
-      photoUrl: ''
+        'Already practising his very best smiles to welcome his favourite Chachi home at Chachu and Chachi’s wedding.',
+      avatarEmoji: '👶'
     },
     {
       id: 'fam-4',
@@ -216,24 +195,24 @@ const INITIAL_CMS_DATA = {
       name: 'Chirag Dasadia & Reena Dasadia',
       relation: 'Father & Mother',
       introduction:
-        'Her father, her pillar of strength, and her warm, ever-supportive mother.',
-      photoUrl: ''
+        'Our pillars of strength, and the warm, ever-supportive hearts who welcomed our story with open arms.',
+      photoUrl: './family/dasadia-parents.jpg'
     },
     {
       id: 'fam-5',
       side: 'bride',
       category: 'Brother',
-      name: 'Vishva',
-      relation: 'Shalvi’s loving brother',
-      introduction: 'Part of the closely knit home where family always comes first.',
-      photoUrl: ''
+      name: 'Vishva Dasadia',
+      relation: 'Younger brother',
+      introduction: 'A proud part of the closely knit Dasadia family, and a joy to celebrate with.',
+      photoUrl: './family/vishva.jpg'
     }
   ],
   events: [
     {
-      id: 'evt-1',
-      name: 'Kankotri Lekhan',
-      date: '31 January 2027',
+      id: 'evt-3',
+      name: 'Home Mehndi',
+      date: '25 February 2027',
       sortOrder: 1,
       startTime: '08:00 AM Onwards',
       endTime: '',
@@ -242,43 +221,7 @@ const INITIAL_CMS_DATA = {
       venueAddress:
         'B202, Krushnakunj Flats, Opposite Vrundavan Bunglows, Kudasan, Gandhinagar, Gujarat, 382421',
       description:
-        'An auspicious beginning where the first wedding invitations (Kankotri) are inscribed with sacred prayers and divine blessings for the upcoming nuptials.',
-      dressCode: 'Traditional Indian Festive • Pastel Gold & Ivory',
-      mapLink: 'https://maps.app.goo.gl/AByfvXAJ6isCwy297',
-      motif: 'kankotri',
-      published: true
-    },
-    {
-      id: 'evt-2',
-      name: 'Home Mehndi — Day I',
-      date: '24 February 2027',
-      sortOrder: 2,
-      startTime: '08:00 AM Onwards',
-      endTime: '',
-      venueLabel: 'Venue',
-      venueName: 'Krushnakunj Flats (B202)',
-      venueAddress:
-        'B202, Krushnakunj Flats, Opposite Vrundavan Bunglows, Kudasan, Gandhinagar, Gujarat, 382421',
-      description:
-        'An intimate afternoon of intricate henna artistry, traditional folk melodies, and joyful family warmth as the wedding week commences.',
-      dressCode: 'Rajasthani Mehndi Greens & Marigold Hues',
-      mapLink: 'https://maps.app.goo.gl/AByfvXAJ6isCwy297',
-      motif: 'mehndi',
-      published: true
-    },
-    {
-      id: 'evt-3',
-      name: 'Home Mehndi — Day II',
-      date: '25 February 2027',
-      sortOrder: 3,
-      startTime: '08:00 AM Onwards',
-      endTime: '',
-      venueLabel: 'Venue',
-      venueName: 'Krushnakunj Flats (B202)',
-      venueAddress:
-        'B202, Krushnakunj Flats, Opposite Vrundavan Bunglows, Kudasan, Gandhinagar, Gujarat, 382421',
-      description:
-        'Continuing the celebration of henna, music, and cherished rituals surrounded by close family and dearest friends.',
+        'An afternoon of henna, music, and cherished rituals, surrounded by close family and dearest friends.',
       dressCode: 'Vibrant Ethnic • Emerald, Lime & Champagne',
       mapLink: 'https://maps.app.goo.gl/AByfvXAJ6isCwy297',
       motif: 'mehndi',
@@ -286,9 +229,9 @@ const INITIAL_CMS_DATA = {
     },
     {
       id: 'evt-4',
-      name: 'Royal Haldi Ceremony',
+      name: 'Haldi Ceremony',
       date: '26 February 2027',
-      sortOrder: 4,
+      sortOrder: 2,
       startTime: '09:00 AM Onwards',
       endTime: '',
       venueLabel: 'Venue',
@@ -305,7 +248,7 @@ const INITIAL_CMS_DATA = {
       id: 'evt-5',
       name: 'Grand Sangeet & Reception',
       date: '26 February 2027',
-      sortOrder: 5,
+      sortOrder: 3,
       startTime: '06:00 PM Onwards',
       endTime: '',
       venueLabel: 'Venue',
@@ -322,7 +265,7 @@ const INITIAL_CMS_DATA = {
       id: 'evt-6',
       name: 'Wedding Ceremony & Baarat',
       date: '27 February 2027',
-      sortOrder: 6,
+      sortOrder: 4,
       startTime: '07:00 AM Onwards',
       endTime: '',
       venueLabel: 'Baarat Venue',
@@ -417,7 +360,7 @@ const INITIAL_CMS_DATA = {
     {
       id: 'ven-1',
       name: 'Krushnakunj Flats (B202)',
-      associatedEvents: 'Kankotri Lekhan, Home Mehndi (Day I & II), Baarat',
+      associatedEvents: 'Home Mehndi, Baarat',
       address:
         'B202, Krushnakunj Flats, Opposite Vrundavan Bunglows, Kudasan, Gandhinagar, Gujarat, 382421',
       landmark: 'Opposite Vrundavan Bunglows, Kudasan',
@@ -766,9 +709,8 @@ const StorySwiper = ({ chapters }) => {
         onPointerMove={onPointerMove}
         onPointerUp={onPointerEnd}
         onPointerCancel={onPointerEnd}
-        className={`story-viewport relative overflow-hidden rounded-xl border-2 border-[#C5A15B] bg-gradient-to-br from-[#641D2B] to-[#46131F] text-[#F4EBDD] shadow-2xl ${
-          dragging ? 'is-dragging' : ''
-        }`}
+        className={`story-viewport relative overflow-hidden rounded-xl border-2 border-[#C5A15B] bg-gradient-to-br from-[#641D2B] to-[#46131F] text-[#F4EBDD] shadow-2xl ${dragging ? 'is-dragging' : ''
+          }`}
       >
         <div
           className="flex items-stretch h-full"
@@ -785,43 +727,26 @@ const StorySwiper = ({ chapters }) => {
               aria-hidden={i !== index}
               className={`story-slide w-full shrink-0 h-full p-4 pb-12 sm:p-12 ${i === index ? 'is-active' : ''}`}
             >
-              <div className="h-full flex flex-col gap-4 lg:grid lg:grid-cols-12 lg:gap-8 lg:items-center">
-                {/* Phone: arch fills the top of the card */}
-                <div className="chapter-frame lg:hidden flex-[0_0_36%] min-h-0 flex justify-center">
-                  <div className="h-full aspect-[4/5] rounded-t-full p-1.5 border-2 border-[#C5A15B]/70 bg-[#F4EBDD]">
-                    <div className="relative h-full w-full rounded-t-full overflow-hidden border border-[#C5A15B]/50 bg-gradient-to-b from-[#641D2B] via-[#46131F] to-[#29201D] flex flex-col items-center justify-center text-center">
-                      {ch.imageUrl ? (
-                        <img src={ch.imageUrl} alt={ch.imageCaption} draggable={false} className="absolute inset-0 w-full h-full object-cover" />
-                      ) : (
-                        <>
-                          <LotusMandalaSVG className="w-14 h-14 opacity-80" color="#C5A15B" />
-                          <span className="mt-1 font-cinzel text-xs tracking-[0.2em] text-[#C5A15B]">{ch.number}</span>
-                        </>
-                      )}
+              <div className="h-full flex flex-col min-h-0">
+                <div className="story-text flex-1 min-h-0 flex flex-col overflow-y-auto overscroll-contain lg:overflow-visible">
+                  <div className="my-auto w-full max-w-3xl mx-auto">
+                    <span className="chapter-item block font-cinzel text-[11px] sm:text-xs tracking-[0.25em] text-[#C5A15B] uppercase" style={{ '--i': 0 }}>
+                      {ch.number} • {ch.dateLabel}
+                    </span>
+                    <h3 className="chapter-item mt-1.5 font-display text-[1.55rem] leading-tight sm:text-4xl text-[#F4EBDD]" style={{ '--i': 1 }}>
+                      {ch.title}
+                    </h3>
+                    <p className="chapter-item font-cormorant italic text-lg sm:text-xl text-[#C5A15B] mt-1" style={{ '--i': 2 }}>
+                      {ch.subtitle}
+                    </p>
+                    <blockquote className="chapter-item my-3 sm:my-5 pl-3 sm:pl-4 border-l-2 border-[#C5A15B] font-cormorant italic text-lg sm:text-xl text-[#E5D5BB]" style={{ '--i': 3 }}>
+                      {ch.quote}
+                    </blockquote>
+                    <div className="space-y-3 sm:space-y-4 font-cormorant text-[1.05rem] sm:text-xl leading-relaxed text-[#F4EBDD]/95">
+                      {ch.story.map((para, pi) => (
+                        <p key={pi} className="chapter-item" style={{ '--i': 4 + pi }}>{para}</p>
+                      ))}
                     </div>
-                  </div>
-                </div>
-                <div className="chapter-frame hidden lg:block lg:col-span-5">
-                  <JharokhaFrame imageUrl={ch.imageUrl} title={ch.imageCaption} monogram={ch.number} />
-                </div>
-
-                <div className="story-text flex-1 min-h-0 overflow-y-auto overscroll-contain lg:overflow-visible lg:col-span-7">
-                  <span className="chapter-item block font-cinzel text-[11px] sm:text-xs tracking-[0.25em] text-[#C5A15B] uppercase" style={{ '--i': 0 }}>
-                    {ch.number} • {ch.dateLabel}
-                  </span>
-                  <h3 className="chapter-item mt-1.5 font-display text-[1.55rem] leading-tight sm:text-4xl text-[#F4EBDD]" style={{ '--i': 1 }}>
-                    {ch.title}
-                  </h3>
-                  <p className="chapter-item font-cormorant italic text-lg sm:text-xl text-[#C5A15B] mt-1" style={{ '--i': 2 }}>
-                    {ch.subtitle}
-                  </p>
-                  <blockquote className="chapter-item my-3 sm:my-5 pl-3 sm:pl-4 border-l-2 border-[#C5A15B] font-cormorant italic text-lg sm:text-xl text-[#E5D5BB]" style={{ '--i': 3 }}>
-                    {ch.quote}
-                  </blockquote>
-                  <div className="space-y-3 sm:space-y-4 font-cormorant text-[1.05rem] sm:text-xl leading-relaxed text-[#F4EBDD]/95">
-                    {ch.story.map((para, pi) => (
-                      <p key={pi} className="chapter-item" style={{ '--i': 4 + pi }}>{para}</p>
-                    ))}
                   </div>
                 </div>
               </div>
@@ -854,7 +779,7 @@ const PalaceGate = ({ doorOpen, lightAlpha }) => (
     <img src={PALACE_ART} alt="" width="1200" height="700" draggable={false} />
     <div className="palace-doorway" style={{ left: `${DOORWAY.left}%`, top: `${DOORWAY.top}%`, width: `${DOORWAY.width}%`, height: `${DOORWAY.height}%` }}>
       <svg className="palace-light" viewBox="0 0 240 390" style={{ opacity: lightAlpha }}>
-        <defs><radialGradient id="palace-light"><stop stopColor="#FFFDF5"/><stop offset=".6" stopColor="#FFE8A8"/><stop offset="1" stopColor="#C5A15B"/></radialGradient></defs>
+        <defs><radialGradient id="palace-light"><stop stopColor="#FFFDF5" /><stop offset=".6" stopColor="#FFE8A8" /><stop offset="1" stopColor="#C5A15B" /></radialGradient></defs>
         <path d="M0 390V130Q0 55 120 0Q240 55 240 130V390Z" fill="url(#palace-light)" />
       </svg>
       {['left', 'right'].map((side) => (
@@ -931,7 +856,7 @@ const DanceStage = ({ active, onComplete }) => {
             onClick={() => {
               if (!blocked) return setPaused(!paused);
               setPaused(false);
-              videoRef.current?.play().then(() => setBlocked(false)).catch(() => {});
+              videoRef.current?.play().then(() => setBlocked(false)).catch(() => { });
             }}
             className="entrance-text-link"
           >
@@ -1035,7 +960,7 @@ const ScrollEntrance = ({ settings, onMusic, isPlayingMusic, onExitChange }) => 
           <p className="entrance-eyebrow font-cinzel intro-item" style={{ '--i': 0 }}>With love, from us to you</p>
           <h2 ref={inviteRef} tabIndex={-1} className="font-display intro-item" style={{ '--i': 1 }}>Two families,<br /><span className="font-cormorant italic">one forever.</span></h2>
           <div className="entrance-portrait intro-item" style={{ '--i': 2 }}>
-            <img src="./couple/jainam-shalvi-3.jpg" alt="Jainam and Shalvi smiling together" width="1400" height="1050" />
+            <img src="./couple/jainam-shalvi-couple.jpg" alt="Jainam and Shalvi together" width="640" height="740" />
           </div>
           <p className="entrance-note font-cormorant intro-item" style={{ '--i': 3 }}>{settings.invitationNote}</p>
           <a href="#home" className="entrance-text-link font-cinzel intro-item" style={{ '--i': 4 }}>Discover the celebrations <span aria-hidden="true">↓</span></a>
@@ -1090,78 +1015,6 @@ const OrnamentalDivider = ({ variant = 'gold', showLotus = true }) => {
         <circle className="draw-bloom" cx="265" cy="18" r="2" fill={stroke} />
       </svg>
     </Reveal>
-  );
-};
-
-const JharokhaFrame = ({
-  imageUrl,
-  title,
-  monogram = 'J&S',
-  dark = false,
-  aspectClass = 'aspect-[4/5]',
-  sizeClass = 'max-w-sm'
-}) => {
-  return (
-    <div
-      className={`relative mx-auto w-full ${sizeClass} rounded-t-full p-3 border-2 border-[#C5A15B]/70 shadow-2xl overflow-hidden ${
-        dark ? 'bg-[#46131F]' : 'bg-[#F4EBDD]'
-      }`}
-    >
-      {/* Inner Cusped Arch SVG Overlay */}
-      <div className={`relative w-full ${aspectClass} rounded-t-full overflow-hidden border border-[#C5A15B]/50 bg-gradient-to-b from-[#641D2B] via-[#46131F] to-[#29201D]`}>
-        {imageUrl ? (
-          <img
-            src={imageUrl}
-            alt={title}
-            loading="lazy"
-            draggable={false}
-            className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
-          />
-        ) : (
-          <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center relative">
-            {/* Subtle Jaali Background Pattern */}
-            <div
-              className="absolute inset-0 opacity-15"
-              style={{
-                backgroundImage:
-                  'radial-gradient(#C5A15B 1px, transparent 1px), radial-gradient(#C5A15B 1px, #46131F 1px)',
-                backgroundSize: '24px 24px',
-                backgroundPosition: '0 0, 12px 12px'
-              }}
-            />
-            <LotusMandalaSVG className="w-28 h-28 mb-3 opacity-80" color="#C5A15B" />
-            <span className="font-cinzel text-lg sm:text-2xl tracking-[0.15em] sm:tracking-[0.25em] whitespace-nowrap text-[#C5A15B] font-semibold">
-              {monogram}
-            </span>
-            <p className="font-cormorant italic text-[#F4EBDD]/90 text-base mt-2 max-w-[220px]">
-              {title}
-            </p>
-            <span className="mt-3 inline-block px-3 py-1 rounded-full text-[10px] font-montserrat uppercase tracking-widest border border-[#C5A15B]/40 text-[#E5D5BB]/80">
-              Royal Jharokha Placeholder
-            </span>
-          </div>
-        )}
-        {/* Top Arch Filigree Crown */}
-        <svg
-          viewBox="0 0 300 90"
-          className="absolute top-0 left-0 w-full h-auto pointer-events-none"
-          fill="none"
-        >
-          <path
-            d="M0 90 V40 C30 25, 90 10, 150 2 C210 10, 270 25, 300 40 V90"
-            stroke="#C5A15B"
-            strokeWidth="2"
-            opacity="0.65"
-          />
-        </svg>
-      </div>
-      {/* Jharokha Sill Base */}
-      <div className="mt-2 py-1.5 px-4 border-t border-[#C5A15B]/40 flex items-center justify-between text-[#C5A15B] text-xs font-cinzel tracking-widest">
-        <span>❖</span>
-        <span className="truncate max-w-[200px]">{title}</span>
-        <span>❖</span>
-      </div>
-    </div>
   );
 };
 
@@ -1292,10 +1145,10 @@ export default function App() {
   // Celebrations: which ceremony's detail card is open
   const [selectedEventId, setSelectedEventId] = useState(null);
 
-  // Gallery Category & Lightbox State
-  const [galleryCategory, setGalleryCategory] = useState('All');
-  const [lightboxIndex, setLightboxIndex] = useState(null);
-  const touchStartX = useRef(null);
+  // PHOTO GALLERY (paused): uncomment these lines to re-activate
+  // const [galleryCategory, setGalleryCategory] = useState('All');
+  // const [lightboxIndex, setLightboxIndex] = useState(null);
+  // const touchStartX = useRef(null);
 
   // Kankotri Invitation Modal
   const [isInvitationModalOpen, setIsInvitationModalOpen] = useState(false);
@@ -1425,7 +1278,7 @@ export default function App() {
         if (soundscapeRef.current) soundscapeRef.current.stop();
         if (shouldPlay) {
           audioElemRef.current.volume = isMutedMusic ? 0 : musicVolume;
-          audioElemRef.current.play().catch(() => {});
+          audioElemRef.current.play().catch(() => { });
           setIsPlayingMusic(true);
         } else {
           audioElemRef.current.pause();
@@ -1470,6 +1323,8 @@ export default function App() {
     }
   };
 
+  // PHOTO GALLERY (paused): uncomment to re-activate
+  /*
   // Filtered Gallery Photos
   const filteredGallery = useMemo(() => {
     if (galleryCategory === 'All') return cmsData.gallery;
@@ -1491,6 +1346,7 @@ export default function App() {
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [lightboxIndex, filteredGallery.length]);
+  */
 
   // Lock page scroll & allow Escape while the full-screen menu is open
   useEffect(() => {
@@ -1637,7 +1493,7 @@ export default function App() {
     { id: 'story', label: 'Our Story' },
     { id: 'families', label: 'Our Families' },
     { id: 'celebrations', label: 'Celebrations' },
-    { id: 'gallery', label: 'Gallery' },
+    // { id: 'gallery', label: 'Gallery' },
     { id: 'invitation', label: 'The Invitation' },
     { id: 'venue', label: 'Venue' }
   ];
@@ -1656,7 +1512,7 @@ export default function App() {
         /* Story card fills exactly one phone/tablet screen below the top bar */
         @media (max-width: 1023px) {
           .story-viewport { height: calc(100svh - 5.5rem); min-height: 520px; }
-          .story-text { -webkit-mask-image: linear-gradient(to bottom, #000 88%, transparent); mask-image: linear-gradient(to bottom, #000 88%, transparent); padding-bottom: 1.5rem; }
+          .story-text { -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 28px), transparent); mask-image: linear-gradient(to bottom, #000 calc(100% - 28px), transparent); padding-bottom: 2.5rem; }
         }
 
         /* Full-screen mobile menu */
@@ -1809,7 +1665,7 @@ export default function App() {
         .entrance-invitation h2 { font-size: clamp(26px, 4.3svh, 42px); line-height: 1.12; }
         .entrance-invitation h2 span { font-size: 1.25em; color: #E8CF8E; font-weight: 400; }
         .entrance-portrait { width: min(220px, 29svh); height: min(254px, 33svh); border-radius: 50% 50% 4px 4px; padding: 5px; border: 1px solid #E8CF8E; flex-shrink: 0; }
-        .entrance-portrait img { width: 100%; height: 100%; object-fit: cover; object-position: 53% 30%; border-radius: inherit; }
+        .entrance-portrait img { width: 100%; height: 100%; object-fit: cover;  border-radius: inherit; }
         .entrance-note { max-width: 470px; font-size: clamp(17px, 2.5svh, 22px); line-height: 1.4; color: #E5D5BB; }
         .entrance-invitation > a { font-size: 10px; text-transform: uppercase; letter-spacing: .15em; }
         @media (min-width: 1024px) { .entrance { height: 260svh; } }
@@ -1920,11 +1776,6 @@ export default function App() {
           from { opacity: 0.35; transform: translate3d(0, 18px, 0); }
           to { opacity: 1; transform: none; }
         }
-        .story-slide.is-active .chapter-frame { animation: frameIn 1100ms var(--ease-out-expo) both; }
-        @keyframes frameIn {
-          from { opacity: 0.5; transform: scale(0.94) rotate(-1deg); }
-          to { opacity: 1; transform: none; }
-        }
         .swipe-hint-hand { animation: swipeHint 2.4s var(--ease-in-out) infinite; }
         @keyframes swipeHint {
           0%, 100% { transform: translate3d(10px, 0, 0); opacity: 0.4; }
@@ -1985,6 +1836,10 @@ export default function App() {
           .story-slide { transition: opacity 200ms ease !important; }
           .press:hover, .press:active { transform: none; }
         }
+        @media (hover: hover) and (pointer: fine) {
+          .music-dock { opacity: 0; transition: opacity 300ms ease; }
+          .music-dock:hover, .music-dock:has(:focus-visible) { opacity: 1; }
+        }
       `}</style>
 
       {/* Optional Custom Background Music Audio Element */}
@@ -2008,11 +1863,10 @@ export default function App() {
       ==================================================================== */}
       <header
         inert={!entranceExited || undefined}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${entranceExited ? '' : 'opacity-0 pointer-events-none -translate-y-full'} ${
-          isScrolled
-            ? 'bg-[#46131F]/95 backdrop-blur-md border-b border-[#C5A15B]/40 shadow-xl py-2.5'
-            : 'bg-gradient-to-b from-[#46131F]/90 to-transparent py-4'
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${entranceExited ? '' : 'opacity-0 pointer-events-none -translate-y-full'} ${isScrolled
+          ? 'bg-[#46131F]/95 backdrop-blur-md border-b border-[#C5A15B]/40 shadow-xl py-2.5'
+          : 'bg-gradient-to-b from-[#46131F]/90 to-transparent py-4'
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
           {/* Custom Monogram Logo Navbar Crest */}
@@ -2024,10 +1878,10 @@ export default function App() {
               <JSMonogramSVG className="w-full h-full" />
             </div>
             <div className="hidden sm:block">
-              <p className="font-cinzel text-xs tracking-[0.2em] text-[#F4EBDD] uppercase">
+              {/* <p className="font-cinzel text-xs tracking-[0.2em] text-[#F4EBDD] uppercase">
                 Jainam &amp; Shalvi
-              </p>
-              <p className="text-[10px] tracking-[0.18em] text-[#C5A15B]">27 FEB 2027</p>
+              </p> */}
+              {/* <p className="text-[10px] tracking-[0.18em] text-[#C5A15B]">27 FEB 2027</p> */}
             </div>
           </button>
 
@@ -2039,11 +1893,10 @@ export default function App() {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`px-3 py-1.5 font-cinzel text-[11px] tracking-[0.16em] uppercase transition-all rounded cursor-pointer ${
-                    isActive
-                      ? 'text-[#29201D] bg-[#C5A15B] font-semibold'
-                      : 'text-[#F4EBDD]/90 hover:text-[#C5A15B]'
-                  }`}
+                  className={`px-3 py-1.5 font-cinzel text-[11px] tracking-[0.16em] uppercase transition-all rounded cursor-pointer ${isActive
+                    ? 'text-[#29201D] bg-[#C5A15B] font-semibold'
+                    : 'text-[#F4EBDD]/90 hover:text-[#C5A15B]'
+                    }`}
                 >
                   {item.label}
                 </button>
@@ -2129,9 +1982,8 @@ export default function App() {
                         {String(idx + 1).padStart(2, '0')}
                       </span>
                       <span
-                        className={`flex-1 font-display text-xl transition-colors ${
-                          isActive ? 'text-[#C5A15B]' : 'text-[#F4EBDD] group-hover:text-[#C5A15B]'
-                        }`}
+                        className={`flex-1 font-display text-xl transition-colors ${isActive ? 'text-[#C5A15B]' : 'text-[#F4EBDD] group-hover:text-[#C5A15B]'
+                          }`}
                       >
                         {item.label}
                       </span>
@@ -2205,10 +2057,9 @@ export default function App() {
           className={`intro ${heroPlay ? 'intro-play' : ''} relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center my-auto`}
           style={{ '--intro-base': '700ms' }}
         >
-          <div style={{ '--i': 0 }} className="intro-item inline-flex items-center gap-2 px-4 py-1 rounded-full border border-[#C5A15B]/50 bg-[#46131F]/70 text-[#C5A15B] font-cinzel text-[11px] tracking-[0.28em] uppercase mb-5">
-            <Crown className="w-3.5 h-3.5" />
-            <span>The Royal Wedding Storybook</span>
-          </div>
+          {/* <div style={{ '--i': 0 }} className="intro-item inline-flex items-center gap-2 px-4 py-1 rounded-full border border-[#C5A15B]/50 bg-[#46131F]/70 text-[#C5A15B] font-cinzel text-[11px] tracking-[0.28em] uppercase mb-5">
+            <span>Every Chapter Led to You</span>
+          </div> */}
 
           <h2 className="font-cinzel text-3xl sm:text-5xl md:text-6xl lg:text-7xl tracking-[0.1em] text-[#F4EBDD] font-semibold uppercase leading-tight">
             <KineticText text={cmsData.settings.groomName} baseDelay={900} play={heroPlay} />
@@ -2221,9 +2072,7 @@ export default function App() {
             <KineticText text={cmsData.settings.brideName} baseDelay={1300} play={heroPlay} />
           </h2>
 
-          <p style={{ '--i': 7 }} className="intro-item mt-3 font-cormorant italic text-xl sm:text-2xl text-[#E5D5BB]">
-            “{cmsData.settings.tagline}”
-          </p>
+
 
           <OrnamentalDivider variant="gold" />
 
@@ -2295,7 +2144,7 @@ export default function App() {
         {/* Bottom Ornamental Transition */}
         <div className="mt-12 text-center">
           <p className="font-cinzel text-[10px] tracking-[0.3em] text-[#C5A15B]/80 uppercase">
-            Scroll to Open the Royal Journal
+            Scroll to Open
           </p>
           <span className="scroll-cue" aria-hidden="true" />
         </div>
@@ -2317,16 +2166,16 @@ export default function App() {
               Meet The Couple
             </h2>
             <p className="mt-3 font-cormorant italic text-xl sm:text-2xl text-[#E5D5BB]">
-              Individual journeys woven into a shared tapestry of love and heritage.
+              Two beautiful journeys, woven together by love, family, and tradition.
             </p>
             <OrnamentalDivider variant="gold" />
           </div>
 
           <div className="mt-16 grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-y-6 lg:gap-x-6 items-stretch">
             {[
-              { key: 'groom', profile: cmsData.couple.groom, family: 'Shah Parivar' },
-              { key: 'bride', profile: cmsData.couple.bride, family: 'Dasadia Parivar' }
-            ].map(({ key, profile, family }, idx) => (
+              { key: 'groom', profile: cmsData.couple.groom },
+              { key: 'bride', profile: cmsData.couple.bride }
+            ].map(({ key, profile }, idx) => (
               <React.Fragment key={key}>
                 {idx === 1 && (
                   <div className="flex lg:flex-col items-center justify-center gap-3" aria-hidden="true">
@@ -2346,7 +2195,7 @@ export default function App() {
                     <div className="absolute left-1/2 -top-14 -translate-x-1/2 w-36 h-40 sm:w-40 sm:h-44 rounded-t-full p-1.5 bg-gradient-to-b from-[#E8CF8E] to-[#A8823E] shadow-xl">
                       <div className="w-full h-full rounded-t-full overflow-hidden bg-gradient-to-b from-[#641D2B] to-[#29201D] flex items-center justify-center">
                         {profile.portraitUrl ? (
-                          <img src={profile.portraitUrl} alt={`Illustrated portrait of ${profile.name}`} loading="lazy" className="w-full h-full object-cover object-top" />
+                          <img src={profile.portraitUrl} alt={profile.name} loading="lazy" className="w-full h-full object-cover object-top" />
                         ) : (
                           <span className="font-display text-5xl text-[#C5A15B]">{profile.monogram}</span>
                         )}
@@ -2354,7 +2203,7 @@ export default function App() {
                     </div>
 
                     <span className="inline-block px-3 py-1 rounded-full border border-[#C5A15B]/50 font-cinzel text-[10px] tracking-[0.3em] text-[#C5A15B] uppercase">
-                      {profile.title} • {family}
+                      {profile.title}
                     </span>
                     <h3 className="mt-3 font-display text-3xl sm:text-4xl text-[#F4EBDD] leading-tight">
                       {profile.name}
@@ -2366,22 +2215,24 @@ export default function App() {
                       {profile.introduction}
                     </p>
 
-                    <ul className="mt-6 space-y-4 text-left">
-                      {profile.facts.map(({ label, text }) => {
-                        const Icon = { Education: BookOpen, Work: Star, Loves: Heart }[label] || Sparkles;
-                        return (
-                        <li key={label} className="flex gap-3.5">
-                          <span className="shrink-0 w-9 h-9 rounded-full border border-[#C5A15B]/60 bg-[#641D2B]/60 flex items-center justify-center text-[#C5A15B]">
-                            <Icon className="w-4 h-4" />
-                          </span>
-                          <div>
-                            <p className="font-cinzel text-[11px] tracking-[0.2em] text-[#C5A15B] uppercase">{label}</p>
-                            <p className="mt-0.5 font-cormorant text-[1.05rem] text-[#F4EBDD]/90 leading-snug">{text}</p>
-                          </div>
-                        </li>
-                        );
-                      })}
-                    </ul>
+                    {profile.facts.length > 0 && (
+                      <ul className="mt-6 space-y-4 text-left">
+                        {profile.facts.map(({ label, text }) => {
+                          const Icon = { Education: BookOpen, Work: Star, Loves: Heart }[label] || Sparkles;
+                          return (
+                            <li key={label} className="flex gap-3.5">
+                              <span className="shrink-0 w-9 h-9 rounded-full border border-[#C5A15B]/60 bg-[#641D2B]/60 flex items-center justify-center text-[#C5A15B]">
+                                <Icon className="w-4 h-4" />
+                              </span>
+                              <div>
+                                <p className="font-cinzel text-[11px] tracking-[0.2em] text-[#C5A15B] uppercase">{label}</p>
+                                <p className="mt-0.5 font-cormorant text-[1.05rem] text-[#F4EBDD]/90 leading-snug">{text}</p>
+                              </div>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    )}
 
                     <div className="mt-7 pt-5 border-t border-[#C5A15B]/30">
                       <LotusMandalaSVG className="w-8 h-8 mx-auto mb-2 opacity-80" color="#C5A15B" />
@@ -2448,11 +2299,10 @@ export default function App() {
                 <button
                   key={tab.id}
                   onClick={() => setFamilyFilter(tab.id)}
-                  className={`px-3 py-2.5 rounded-sm font-cinzel text-xs tracking-wider uppercase border transition-colors cursor-pointer ${
-                    familyFilter === tab.id
-                      ? 'bg-[#641D2B] text-[#F4EBDD] border-[#641D2B]'
-                      : 'bg-[#E5D5BB]/70 text-[#29201D] border-[#C5A15B] hover:border-[#641D2B]'
-                  }`}
+                  className={`px-3 py-2.5 rounded-sm font-cinzel text-xs tracking-wider uppercase border transition-colors cursor-pointer ${familyFilter === tab.id
+                    ? 'bg-[#641D2B] text-[#F4EBDD] border-[#641D2B]'
+                    : 'bg-[#E5D5BB]/70 text-[#29201D] border-[#C5A15B] hover:border-[#641D2B]'
+                    }`}
                 >
                   {tab.label}
                 </button>
@@ -2484,13 +2334,17 @@ export default function App() {
                 >
                   <div>
                     {/* Arch Avatar / Portrait */}
-                    <div className="w-28 h-32 mx-auto rounded-t-full border-2 border-[#C5A15B] bg-[#641D2B] overflow-hidden flex flex-col items-center justify-center text-[#C5A15B] mb-5 shadow-md">
+                    <div className="w-36 h-44 mx-auto rounded-t-full border-2 border-[#C5A15B] bg-[#641D2B] overflow-hidden flex flex-col items-center justify-center text-[#C5A15B] mb-5 shadow-md">
                       {member.photoUrl ? (
                         <img
                           src={member.photoUrl}
                           alt={member.name}
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-cover object-top"
                         />
+                      ) : member.avatarEmoji ? (
+                        <span role="img" aria-label={member.name} className="text-6xl leading-none">
+                          {member.avatarEmoji}
+                        </span>
                       ) : (
                         <>
                           <Users className="w-7 h-7 mb-1 text-[#C5A15B]" />
@@ -2539,7 +2393,7 @@ export default function App() {
               Wedding Celebrations
             </h2>
             <p className="mt-3 font-cormorant italic text-xl sm:text-2xl text-[#E5D5BB]">
-              From the sacred Kankotri Lekhan to the Royal Wedding Mandap.
+              From the Home Mehndi to the Wedding Mandap.
             </p>
             <OrnamentalDivider variant="gold" />
             <p className="font-cinzel text-[11px] tracking-[0.25em] text-[#C5A15B]/90 uppercase">
@@ -2559,16 +2413,14 @@ export default function App() {
                     className="relative flex flex-col md:flex-row items-center justify-between"
                   >
                     <div
-                      className={`w-full md:w-[45%] ${
-                        isLeft ? 'md:text-right md:pr-8' : 'md:order-2 md:text-left md:pl-8'
-                      }`}
+                      className={`w-full md:w-[45%] ${isLeft ? 'md:text-right md:pr-8' : 'md:order-2 md:text-left md:pl-8'
+                        }`}
                     >
                       <button
                         type="button"
                         onClick={() => setSelectedEventId(evt.id)}
-                        className={`w-full text-left ${
-                          isLeft ? 'md:text-right' : 'md:text-left'
-                        } p-5 rounded-lg bg-[#46131F]/90 border border-[#C5A15B]/60 shadow-lg hover:border-[#C5A15B] hover:-translate-y-0.5 transition-all cursor-pointer`}
+                        className={`w-full text-left ${isLeft ? 'md:text-right' : 'md:text-left'
+                          } p-5 rounded-lg bg-[#46131F]/90 border border-[#C5A15B]/60 shadow-lg hover:border-[#C5A15B] hover:-translate-y-0.5 transition-all cursor-pointer`}
                       >
                         <span className="block font-cinzel text-xs tracking-[0.2em] text-[#C5A15B] uppercase">
                           {evt.date}
@@ -2702,10 +2554,10 @@ export default function App() {
       {/* ====================================================================
           SECTION 6: PHOTO GALLERY (WITH CATEGORY FILTERS & LIGHTBOX) + VIDEO GALLERY
       ==================================================================== */}
+      {/* PHOTO GALLERY + VIDEO SCREENING ROOM (paused): delete this wrapper's first and last line to re-activate
       <section id="gallery" className="py-20 sm:py-24 bg-[#F4EBDD] text-[#29201D]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          {/* PHOTO GALLERY */}
-          <div className="text-center max-w-3xl mx-auto">
+                    <div className="text-center max-w-3xl mx-auto">
             <span className="font-cinzel text-xs tracking-[0.3em] text-[#641D2B] uppercase font-semibold">
               ❖ Royal Moments &amp; Portraits ❖
             </span>
@@ -2717,8 +2569,7 @@ export default function App() {
             </p>
             <OrnamentalDivider variant="burgundy" />
 
-            {/* Category Filter Tabs */}
-            <div className="flex flex-wrap items-center justify-center gap-2 mt-4">
+                        <div className="flex flex-wrap items-center justify-center gap-2 mt-4">
               {[
                 'All',
                 'Couple',
@@ -2734,11 +2585,10 @@ export default function App() {
                     setGalleryCategory(cat);
                     setLightboxIndex(null);
                   }}
-                  className={`px-4 py-2 rounded-sm font-cinzel text-xs tracking-wider uppercase border transition-colors cursor-pointer ${
-                    galleryCategory === cat
+                  className={`px-4 py-2 rounded-sm font-cinzel text-xs tracking-wider uppercase border transition-colors cursor-pointer ${galleryCategory === cat
                       ? 'bg-[#641D2B] text-[#F4EBDD] border-[#641D2B]'
                       : 'bg-[#E5D5BB]/70 text-[#29201D] border-[#C5A15B] hover:border-[#641D2B]'
-                  }`}
+                    }`}
                 >
                   {cat}
                 </button>
@@ -2746,8 +2596,7 @@ export default function App() {
             </div>
           </div>
 
-          {/* Masonry-Inspired Gallery Grid */}
-          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredGallery.map((item, idx) => (
               <div
                 key={item.id}
@@ -2791,8 +2640,7 @@ export default function App() {
             ))}
           </div>
 
-          {/* SEPARATE VIDEO GALLERY SECTION */}
-          <div className="mt-20 pt-16 border-t-2 border-[#C5A15B]/40">
+                    <div className="mt-20 pt-16 border-t-2 border-[#C5A15B]/40">
             <div className="text-center max-w-3xl mx-auto">
               <span className="font-cinzel text-xs tracking-[0.3em] text-[#641D2B] uppercase font-semibold">
                 ❖ Motion Pictures &amp; Films ❖
@@ -2847,8 +2695,10 @@ export default function App() {
           </div>
         </div>
       </section>
+      */}
 
       {/* FULL-SCREEN GALLERY LIGHTBOX MODAL (WITH TOUCH SWIPE & KEYBOARD NAVIGATION) */}
+      {/* GALLERY LIGHTBOX (paused): delete this wrapper's first and last line to re-activate
       {lightboxIndex !== null && filteredGallery[lightboxIndex] && (
         <div
           className="fixed inset-0 z-[95] bg-[#29201D]/95 backdrop-blur-md flex flex-col justify-between p-4 sm:p-8"
@@ -2868,8 +2718,7 @@ export default function App() {
             touchStartX.current = null;
           }}
         >
-          {/* Top Bar */}
-          <div className="flex items-center justify-between text-[#F4EBDD]">
+                    <div className="flex items-center justify-between text-[#F4EBDD]">
             <span className="font-cinzel text-xs tracking-widest text-[#C5A15B]">
               {lightboxIndex + 1} / {filteredGallery.length} •{' '}
               {filteredGallery[lightboxIndex].category}
@@ -2882,8 +2731,7 @@ export default function App() {
             </button>
           </div>
 
-          {/* Center Image & Arrows */}
-          <div className="relative my-auto max-w-4xl w-full mx-auto flex items-center justify-center">
+                    <div className="relative my-auto max-w-4xl w-full mx-auto flex items-center justify-center">
             <button
               onClick={() =>
                 setLightboxIndex(
@@ -2925,8 +2773,7 @@ export default function App() {
             </button>
           </div>
 
-          {/* Caption Footer */}
-          <div className="text-center text-[#F4EBDD]">
+                    <div className="text-center text-[#F4EBDD]">
             <h5 className="font-cinzel text-base text-[#C5A15B]">
               {filteredGallery[lightboxIndex].title}
             </h5>
@@ -2934,6 +2781,7 @@ export default function App() {
           </div>
         </div>
       )}
+      */}
 
       {/* ====================================================================
           SECTION 7: OFFICIAL WEDDING INVITATION (KANKOTRI PREVIEW & PDF)
@@ -2950,7 +2798,7 @@ export default function App() {
             The Official Invitation
           </h2>
           <p className="mt-3 font-cormorant italic text-xl sm:text-2xl text-[#E5D5BB]">
-            Our traditional royal wedding invitation scroll, ready to view or download on mobile &amp; desktop.
+            Our wedding invitation scroll, ready to view or download.
           </p>
           <OrnamentalDivider variant="gold" />
 
@@ -2981,11 +2829,11 @@ export default function App() {
                 {cmsData.settings.weddingDateDisplay}
               </p>
 
-              <p className="mt-3 text-xs text-[#641D2B]/80 font-montserrat">
+              {/* <p className="mt-3 text-xs text-[#641D2B]/80 font-montserrat">
                 {cmsData.settings.invitationPdfUrl
                   ? 'Official Kankotri PDF Uploaded & Ready for Download'
                   : '[Kankotri Preview Placeholder — set settings.invitationPdfUrl in code]'}
-              </p>
+              </p> */}
 
               {/* Action Buttons */}
               <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
@@ -3082,7 +2930,7 @@ export default function App() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-3xl mx-auto">
             <span className="font-cinzel text-xs tracking-[0.3em] text-[#641D2B] uppercase font-semibold">
-              ❖ Royal Destinations &amp; Directions ❖
+              ❖ Destinations &amp; Directions ❖
             </span>
             <h2 className="mt-2 font-cinzel text-3xl sm:text-5xl text-[#641D2B] tracking-wider uppercase">
               Wedding Venues
@@ -3187,7 +3035,7 @@ export default function App() {
                   Inscribe Your Blessing
                 </h3>
                 <p className="text-xs text-[#E5D5BB]/85 leading-relaxed">
-                  No login required. Your blessing appears on the royal wall right away.
+                  No login required. Your blessing appears on the wall right away.
                 </p>
 
                 {/* Honeypot field for spam protection */}
@@ -3246,11 +3094,10 @@ export default function App() {
 
                 {wishFeedback && (
                   <div
-                    className={`p-3.5 rounded border text-xs flex items-start gap-2.5 ${
-                      wishFeedback.type === 'success'
-                        ? 'bg-[#C5A15B]/20 border-[#C5A15B] text-[#F4EBDD]'
-                        : 'bg-red-950/60 border-red-400 text-red-200'
-                    }`}
+                    className={`p-3.5 rounded border text-xs flex items-start gap-2.5 ${wishFeedback.type === 'success'
+                      ? 'bg-[#C5A15B]/20 border-[#C5A15B] text-[#F4EBDD]'
+                      : 'bg-red-950/60 border-red-400 text-red-200'
+                      }`}
                   >
                     {wishFeedback.type === 'success' ? (
                       <CheckCircle2 className="w-4 h-4 text-[#C5A15B] shrink-0 mt-0.5" />
@@ -3276,11 +3123,10 @@ export default function App() {
               {approvedWishes.map((wish) => (
                 <div
                   key={wish.id}
-                  className={`p-6 rounded-xl border transition-all ${
-                    wish.featured
-                      ? 'bg-gradient-to-r from-[#46131F] to-[#641D2B] border-2 border-[#C5A15B] shadow-xl'
-                      : 'bg-[#46131F]/80 border-[#C5A15B]/40'
-                  }`}
+                  className={`p-6 rounded-xl border transition-all ${wish.featured
+                    ? 'bg-gradient-to-r from-[#46131F] to-[#641D2B] border-2 border-[#C5A15B] shadow-xl'
+                    : 'bg-[#46131F]/80 border-[#C5A15B]/40'
+                    }`}
                 >
                   <div className="flex items-start justify-between gap-4">
                     <div>
@@ -3362,7 +3208,7 @@ export default function App() {
           </div>
 
           <div className="mt-12 pt-8 border-t border-[#C5A15B]/25 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#E5D5BB]/70">
-            <span>© 2027 {cmsData.settings.groomName} &amp; {cmsData.settings.brideName}. Crafted with Royal Heritage.</span>
+            <span>© 2027 {cmsData.settings.groomName} &amp; {cmsData.settings.brideName}.</span>
             <div className="flex items-center gap-4">
               <button
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
@@ -3379,7 +3225,7 @@ export default function App() {
           FLOATING ROYAL BACKGROUND MUSIC PLAYER
       ==================================================================== */}
       <div style={{ bottom: 'max(1rem, env(safe-area-inset-bottom))' }}
-        className="fixed left-4 sm:left-5 z-40 flex items-center gap-2 bg-[#46131F]/95 border-2 border-[#C5A15B] text-[#F4EBDD] p-1 sm:px-3.5 sm:py-2.5 rounded-full shadow-2xl backdrop-blur-md">
+        className="music-dock fixed left-4 sm:left-5 z-40 flex items-center gap-2 bg-[#46131F]/95 border-2 border-[#C5A15B] text-[#F4EBDD] p-1 sm:px-3.5 sm:py-2.5 rounded-full shadow-2xl backdrop-blur-md">
         <button
           onClick={() => toggleMusicPlayback()}
           aria-label={isPlayingMusic ? 'Pause Royal Music' : 'Play Royal Music'}
@@ -3389,12 +3235,12 @@ export default function App() {
         </button>
 
         <div className="hidden sm:flex flex-col pr-1">
-          <span className="font-cinzel text-[10px] tracking-widest text-[#C5A15B] uppercase">
+          {/* <span className="font-cinzel text-[10px] tracking-widest text-[#C5A15B] uppercase">
             {isPlayingMusic ? 'Royal Raag Playing' : 'Royal Soundscape'}
-          </span>
-          <span className="text-[10px] text-[#E5D5BB]/80">
+          </span> */}
+          {/* <span className="text-[10px] text-[#E5D5BB]/80">
             {cmsData.settings.musicUrl ? 'Custom Track' : 'Sitar & Tanpura'}
-          </span>
+          </span> */}
         </div>
 
         <button
