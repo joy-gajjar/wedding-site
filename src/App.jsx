@@ -130,7 +130,7 @@ const INITIAL_CMS_DATA = {
       title: 'The Groom',
       writtenBy: 'In Shalvi’s words',
       monogram: 'J',
-      portraitUrl: './couple/jainam-portrait.jpg',
+      portraitUrl: './couple/jainam-portrait.webp',
       introduction:
         'Whenever something needs solving, Jainam already has three logical solutions mapped out in his head, and I love that about him. A chess board, a video game or a new skill to learn is all it takes to make him happy. He can have a quick temper, yes, but beneath all that logic is the funniest, most fiercely caring and loving man I know. I can’t wait to build our forever with him.',
       facts: [],
@@ -141,7 +141,7 @@ const INITIAL_CMS_DATA = {
       title: 'The Bride',
       writtenBy: 'In Jainam’s words',
       monogram: 'S',
-      portraitUrl: './couple/shalvi-portrait.jpg',
+      portraitUrl: './couple/shalvi-portrait.webp',
       introduction:
         'Shalvi effortlessly puts everyone else before herself, and she is the most caring, loving and compassionate person I have ever met. Her creative spark turns everything around her into something beautiful, from intricate resin art and nail art to traditional wedding chaabs and the meals she cooks in her kitchen.',
       facts: [],
@@ -167,7 +167,7 @@ const INITIAL_CMS_DATA = {
       name: 'Manvesh Shah & Bhavina Shah',
       relation: 'Papa & Mom',
       introduction: 'Our guiding lights, whose unwavering love and guidance hold our family together, and who welcomed our story with open hearts.',
-      photoUrl: './family/shah-parents.jpg'
+      photoUrl: './family/shah-parents.webp'
     },
     {
       id: 'fam-2',
@@ -176,7 +176,7 @@ const INITIAL_CMS_DATA = {
       name: 'Bandish Bhai & Kamya Bhabhi',
       relation: 'Elder brother & sister-in-law',
       introduction: 'Our constant camaraderie, and the very reason our famous soft launch happened.',
-      photoUrl: './family/bandish-kamya.jpg'
+      photoUrl: './family/bandish-kamya.webp'
     },
     {
       id: 'fam-3',
@@ -196,7 +196,7 @@ const INITIAL_CMS_DATA = {
       relation: 'Father & Mother',
       introduction:
         'Our pillars of strength, and the warm, ever-supportive hearts who welcomed our story with open arms.',
-      photoUrl: './family/dasadia-parents.jpg'
+      photoUrl: './family/dasadia-parents.webp'
     },
     {
       id: 'fam-5',
@@ -205,7 +205,7 @@ const INITIAL_CMS_DATA = {
       name: 'Vishva Dasadia',
       relation: 'Younger brother',
       introduction: 'A proud part of the closely knit Dasadia family, and a joy to celebrate with.',
-      photoUrl: './family/vishva.jpg'
+      photoUrl: './family/vishva.webp'
     }
   ],
   events: [
@@ -805,7 +805,7 @@ const PalaceGate = ({ doorOpen, lightAlpha }) => (
 // COUPLE DANCE — pre-rendered illustrated film (public/media), muted so it can autoplay
 // ============================================================================
 const DANCE_VIDEO = './media/our-dance.mp4';
-const DANCE_POSTER = './media/our-dance-poster.jpg';
+const DANCE_POSTER = './media/our-dance-poster.webp';
 
 const DanceStage = ({ active, onComplete }) => {
   const videoRef = useRef(null);
@@ -960,7 +960,7 @@ const ScrollEntrance = ({ settings, onMusic, isPlayingMusic, onExitChange }) => 
           <p className="entrance-eyebrow font-cinzel intro-item" style={{ '--i': 0 }}>With love, from us to you</p>
           <h2 ref={inviteRef} tabIndex={-1} className="font-display intro-item" style={{ '--i': 1 }}>Two families,<br /><span className="font-cormorant italic">one forever.</span></h2>
           <div className="entrance-portrait intro-item" style={{ '--i': 2 }}>
-            <img src="./couple/jainam-shalvi-couple.jpg" alt="Jainam and Shalvi together" width="640" height="740" />
+            <img src="./couple/jainam-shalvi-couple.webp" alt="Jainam and Shalvi together" width="640" height="740" />
           </div>
           <p className="entrance-note font-cormorant intro-item" style={{ '--i': 3 }}>{settings.invitationNote}</p>
           <a href="#home" className="entrance-text-link font-cinzel intro-item" style={{ '--i': 4 }}>Discover the celebrations <span aria-hidden="true">↓</span></a>
@@ -975,7 +975,7 @@ const JSMonogramSVG = ({ className = 'w-full h-full' }) => (
     className={`${className} rounded-full bg-[#F4EBDD] border-2 border-[#C5A15B] shadow-lg overflow-hidden flex items-center justify-center`}
   >
     <img
-      src="./JS%20Logo%20Transperant.png"
+      src="./js-logo.webp"
       alt="Jainam and Shalvi wedding logo"
       className="w-full h-full object-contain scale-100"
     />
